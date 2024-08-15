@@ -1,0 +1,50 @@
+.container{
+    max-width: 50vw;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+}
+.form{
+    margin: 1rem;
+    padding:1rem;
+}
+.txtarea{
+    padding: 5px;
+    background-color: black;
+    color:white;
+    max-width: 30vw;
+    max-height: 30vh;
+}
+.btn{
+    background-color: red;
+    color:white;
+    padding: 5px;
+    margin: 5px;
+    border: none;
+    display: flex;
+}
+#codesList{
+    display: grid;
+    grid-template-columns: repeat(8,100px);
+    border:1px solid black;
+    width: 50vw;
+    height: 20vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 5px;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    text-align: center;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numeros Aleatorios</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flex-row">
+        <div class="container">
+            <h2 class="title">Generador de codigos aleatorios</h2>
+            <form onsubmit="sendForm(event)" class="form">
+                <input class="txt" type="number" id="quantity" placeholder="Cantidad de códigos"/>
+                <button class="btn" type="submit">Generar Numeros</button>
+                <button class="btn" onclick="copyText()">Copiar Texto</button>
+            </form>
+            <div id="codesList"></div>
+            <h4>Codigos a comparar</h4>
+            <form onsubmit="compareMultipleCodes(event)">
+                <textarea class="txtarea" id="codes" placeholder="Ingresa los códigos separados por comas"></textarea>
+                <button class="btn" type="submit">Comparar Códigos</button>
+            </form>
+            <h4>Resultado</h4>
+            <div id="result"></div>
+        </div>
+    </div>
+   
+</body>
+</html>
